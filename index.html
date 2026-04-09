@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TriNova Tech — Elite web development agency. We build lightning-fast, high-converting websites and web apps." />
+  <title>TriNova Tech — Elite Web Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="TriNova Tech Home">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">TRINOVA TECH</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#hero"      class="nav-link" id="nav-hero">Home</a></li>
+        <li><a href="#about"     class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#services"  class="nav-link" id="nav-services">Services</a></li>
+        <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Work</a></li>
+        <li><a href="#contact"   class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="nav-cta" id="nav-cta-btn">
+        <span>Book a Meeting</span>
+        <span class="cta-orbit">◎</span>
+      </button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#hero"      class="mobile-link">Home</a>
+      <a href="#about"     class="mobile-link">About</a>
+      <a href="#services"  class="mobile-link">Services</a>
+      <a href="#portfolio" class="mobile-link">Work</a>
+      <a href="#contact"   class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO -->
+  <section class="section" id="hero" aria-label="Hero">
+    <canvas class="particle-canvas" id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-orb orb-1" aria-hidden="true"></div>
+    <div class="ambient-orb orb-2" aria-hidden="true"></div>
+    <div class="ambient-orb orb-3" aria-hidden="true"></div>
+
+    <div class="floating-card fc-1" aria-hidden="true" data-depth="0.3">
+      <div class="fc-inner"><span class="fc-icon">✦</span><span class="fc-label">Lighthouse</span><span class="fc-value">100/100</span></div>
+    </div>
+    <div class="floating-card fc-2" aria-hidden="true" data-depth="0.6">
+      <div class="fc-inner"><span class="fc-icon">◈</span><span class="fc-label">Load Time</span><span class="fc-value"><0.8s</span></div>
+    </div>
+    <div class="floating-card fc-3" aria-hidden="true" data-depth="0.2">
+      <div class="fc-inner"><span class="fc-icon">⬡</span><span class="fc-label">Uptime</span><span class="fc-value">99.99%</span></div>
+    </div>
+    <div class="floating-card fc-4" aria-hidden="true" data-depth="0.8">
+      <div class="fc-inner"><span class="fc-icon">◉</span><span class="fc-label">Stack</span><span class="fc-value">Next.js</span></div>
+    </div>
+    <div class="floating-card fc-5" aria-hidden="true" data-depth="0.45">
+      <div class="fc-inner"><span class="fc-icon">◆</span><span class="fc-label">Leads</span><span class="fc-value">+300%</span></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" id="hero-eyebrow">⬆ Engineering Excellence</p>
+      <h1 class="hero-title" id="hero-title">
+        <span class="title-line tl-1">Websites That</span>
+        <span class="title-line tl-2">Build Gravity</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        We are an elite development team building lightning-fast, high-converting websites and scalable web applications that <em>pull your customers in.</em>
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" id="hero-explore-btn">
+          <span>Book a Discovery Call</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#portfolio" class="btn-ghost" id="hero-about-btn">View Our Tech ↗</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ABOUT -->
+  <section class="section" id="about" aria-label="About">
+    <div class="section-bg-glow glow-left" aria-hidden="true"></div>
+    <div class="about-container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">◈ Our Journey</p>
+        <h2 class="section-title">Elite <span class="gradient-text">Engineers</span></h2>
+        <p class="section-subtitle">We don't use templates. We write code that scales your business.</p>
+      </div>
+
+      <div class="timeline" id="about-timeline">
+        <div class="timeline-connector" aria-hidden="true">
+          <svg class="connector-svg" viewBox="0 0 4 700" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0"/>
+                <stop offset="50%" stop-color="var(--accent-violet)"/>
+                <stop offset="100%" stop-color="var(--accent-cyan)" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M2,0 Q2,175 2,350 Q2,525 2,700" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-dasharray="8 6"/>
+          </svg>
+        </div>
+        <div class="timeline-item ti-left reveal-left">
+          <div class="ti-card">
+            <span class="ti-year">2019</span>
+            <h3 class="ti-title">First Commit</h3>
+            <p class="ti-desc">Founded as an engineering collective focused solely on web performance and modern frameworks like React and Node.js.</p>
+          </div>
+          <div class="ti-node" aria-hidden="true"><span class="ti-dot"></span><span class="ti-ring"></span></div>
+        </div>
+        <div class="timeline-item ti-right reveal-right">
+          <div class="ti-node" aria-hidden="true"><span class="ti-dot"></span><span class="ti-ring"></span></div>
+          <div class="ti-card">
+            <span class="ti-year">2021</span>
+            <h3 class="ti-title">Scaling Infrastructure</h3>
+            <p class="ti-desc">Delivered our first massive SaaS architecture handling 10k+ concurrent users with zero downtime.</p>
+          </div>
+        </div>
+        <div class="timeline-item ti-left reveal-left">
+          <div class="ti-card">
+            <span class="ti-year">2023</span>
+            <h3 class="ti-title">Performance Obsession</h3>
+            <p class="ti-desc">Migrated 50+ businesses to edge-rendering, dropping client load times to under 0.8 seconds and boosting conversions.</p>
+          </div>
+          <div class="ti-node" aria-hidden="true"><span class="ti-dot"></span><span class="ti-ring"></span></div>
+        </div>
+        <div class="timeline-item ti-right reveal-right">
+          <div class="ti-node" aria-hidden="true"><span class="ti-dot"></span><span class="ti-ring"></span></div>
+          <div class="ti-card">
+            <span class="ti-year">2024</span>
+            <h3 class="ti-title">Full Lifecycle Agency</h3>
+            <p class="ti-desc">Web development, headless e-commerce, and bespoke software — your engineering partners from idea to IPO.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats reveal-up">
+        <div class="stat-item"><span class="stat-num" data-target="150">0</span><span class="stat-unit">+</span><span class="stat-label">Sites Launched</span></div>
+        <div class="stat-item"><span class="stat-num" data-target="99">0</span><span class="stat-unit">%</span><span class="stat-label">Client Retention</span></div>
+        <div class="stat-item"><span class="stat-num" data-target="0.5">0</span><span class="stat-unit">s</span><span class="stat-label">Avg Load Time</span></div>
+        <div class="stat-item"><span class="stat-num" data-target="15">0</span><span class="stat-unit">+</span><span class="stat-label">Core Devs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: SERVICES -->
+  <section class="section" id="services" aria-label="Services">
+    <div class="section-bg-glow glow-right" aria-hidden="true"></div>
+    <div class="services-container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">◆ Our Stack</p>
+        <h2 class="section-title">Development <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">We build the foundation your digital business runs on.</p>
+      </div>
+      <div class="services-grid" id="services-grid">
+        <article class="service-card sc-depth-1 reveal-up" id="sc-webdesign" tabindex="0">
+          <div class="sc-glow-ring" aria-hidden="true"></div>
+          <div class="sc-icon-wrap"><span class="sc-icon">⬡</span></div>
+          <h3 class="sc-title">Custom Websites</h3>
+          <p class="sc-desc">Marketing websites built on Next.js from the ground up to guarantee flawless performance and unlimited scalability.</p>
+          <div class="sc-tags"><span class="sc-tag">Next.js</span><span class="sc-tag">Tailwind</span><span class="sc-tag">Vercel</span></div>
+          <div class="sc-arrow">↗</div>
+        </article>
+        <article class="service-card sc-depth-2 reveal-up" id="sc-motion" tabindex="0" style="--reveal-delay:0.1s">
+          <div class="sc-glow-ring" aria-hidden="true"></div>
+          <div class="sc-icon-wrap"><span class="sc-icon">◉</span></div>
+          <h3 class="sc-title">Web Applications</h3>
+          <p class="sc-desc">Full-stack web applications and SaaS platforms. Complex state management, database architecture, and API integration.</p>
+          <div class="sc-tags"><span class="sc-tag">React</span><span class="sc-tag">Node.js</span><span class="sc-tag">PostgreSQL</span></div>
+          <div class="sc-arrow">↗</div>
+        </article>
+        <article class="service-card sc-depth-3 reveal-up" id="sc-brand" tabindex="0" style="--reveal-delay:0.2s">
+          <div class="sc-glow-ring" aria-hidden="true"></div>
+          <div class="sc-icon-wrap"><span class="sc-icon">◈</span></div>
+          <h3 class="sc-title">E-Commerce Solutions</h3>
+          <p class="sc-desc">Headless commerce storefronts that process thousands of transactions instantly. Shopify Plus integrations and custom carts.</p>
+          <div class="sc-tags"><span class="sc-tag">Shopify</span><span class="sc-tag">Stripe</span><span class="sc-tag">Headless</span></div>
+          <div class="sc-arrow">↗</div>
+        </article>
+        <article class="service-card sc-depth-1 reveal-up" id="sc-3d" tabindex="0" style="--reveal-delay:0.3s">
+          <div class="sc-glow-ring" aria-hidden="true"></div>
+          <div class="sc-icon-wrap"><span class="sc-icon">✦</span></div>
+          <h3 class="sc-title">UI/UX Engineering</h3>
+          <p class="sc-desc">Where design meets code. We program physics-based animations, micro-interactions, and pixel-perfect responsive layouts.</p>
+          <div class="sc-tags"><span class="sc-tag">Framer Motion</span><span class="sc-tag">CSS3</span></div>
+          <div class="sc-arrow">↗</div>
+        </article>
+        <article class="service-card sc-depth-2 reveal-up" id="sc-ux" tabindex="0" style="--reveal-delay:0.4s">
+          <div class="sc-glow-ring" aria-hidden="true"></div>
+          <div class="sc-icon-wrap"><span class="sc-icon">◆</span></div>
+          <h3 class="sc-title">Technical SEO & Perf</h3>
+          <p class="sc-desc">We fix what others broke. Achieving 100/100 Core Web Vitals, server-side rendering, and structured JSON-LD data.</p>
+          <div class="sc-tags"><span class="sc-tag">SSR / SSG</span><span class="sc-tag">Core Web Vitals</span></div>
+          <div class="sc-arrow">↗</div>
+        </article>
+        <article class="service-card sc-depth-3 reveal-up" id="sc-dev" tabindex="0" style="--reveal-delay:0.5s">
+          <div class="sc-glow-ring" aria-hidden="true"></div>
+          <div class="sc-icon-wrap"><span class="sc-icon">⬡</span></div>
+          <h3 class="sc-title">MVP Development</h3>
+          <p class="sc-desc">Have a startup idea? We'll architect, build, and deploy your Minimum Viable Product inside of 4-6 weeks.</p>
+          <div class="sc-tags"><span class="sc-tag">Startup</span><span class="sc-tag">Firebase</span><span class="sc-tag">Agile</span></div>
+          <div class="sc-arrow">↗</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PORTFOLIO -->
+  <section class="section" id="portfolio" aria-label="Portfolio">
+    <div class="section-bg-glow glow-center" aria-hidden="true"></div>
+    <div class="portfolio-container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">◉ Case Studies</p>
+        <h2 class="section-title">Shipping <span class="gradient-text">Excellence</span></h2>
+        <p class="section-subtitle">Click any project to inspect our code and architecture.</p>
+      </div>
+      <div class="orbital-system" id="orbital-system">
+        <div class="orbital-core" id="orbital-core" aria-hidden="true">
+          <div class="core-inner"><span class="core-icon">◉</span></div>
+          <div class="core-ring cr-1"></div>
+          <div class="core-ring cr-2"></div>
+          <div class="core-ring cr-3"></div>
+        </div>
+        <div class="orbital-item" id="oi-0" tabindex="0" role="button" aria-label="Project Alpha" data-index="0"><div class="oi-card"><span class="oi-num">01</span><h3 class="oi-title">OmniStore</h3><p class="oi-cat">E-Commerce</p></div></div>
+        <div class="orbital-item" id="oi-1" tabindex="0" role="button" aria-label="Project Beta" data-index="1"><div class="oi-card"><span class="oi-num">02</span><h3 class="oi-title">FinDash</h3><p class="oi-cat">SaaS App</p></div></div>
+        <div class="orbital-item" id="oi-2" tabindex="0" role="button" aria-label="Project Gamma" data-index="2"><div class="oi-card"><span class="oi-num">03</span><h3 class="oi-title">Nexus AI</h3><p class="oi-cat">Landing Page</p></div></div>
+        <div class="orbital-item" id="oi-3" tabindex="0" role="button" aria-label="Project Delta" data-index="3"><div class="oi-card"><span class="oi-num">04</span><h3 class="oi-title">MedSync</h3><p class="oi-cat">Healthcare Portal</p></div></div>
+        <div class="orbital-item" id="oi-4" tabindex="0" role="button" aria-label="Project Epsilon" data-index="4"><div class="oi-card"><span class="oi-num">05</span><h3 class="oi-title">Zenith</h3><p class="oi-cat">Corporate Site</p></div></div>
+        <div class="orbital-item" id="oi-5" tabindex="0" role="button" aria-label="Project Zeta" data-index="5"><div class="oi-card"><span class="oi-num">06</span><h3 class="oi-title">ChainLog</h3><p class="oi-cat">Web3 Platform</p></div></div>
+      </div>
+      <div class="focus-overlay" id="focus-overlay" aria-hidden="true"></div>
+      <div class="focus-panel" id="focus-panel" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="focus-close" id="focus-close-btn" aria-label="Close">✕</button>
+        <div class="focus-content">
+          <span class="focus-num" id="focus-num"></span>
+          <h2 class="focus-title" id="focus-title"></h2>
+          <p class="focus-cat" id="focus-cat"></p>
+          <p class="focus-desc" id="focus-desc"></p>
+          <div class="focus-tags" id="focus-tags"></div>
+          <a href="#contact" class="btn-primary focus-cta" id="focus-cta-btn">Discuss A Similar Build</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: CONTACT -->
+  <section class="section" id="contact" aria-label="Contact">
+    <div class="landing-settle-bg" aria-hidden="true"></div>
+    <div class="contact-container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">◆ Schedule a Call</p>
+        <h2 class="section-title">Meeting <span class="gradient-text">Zone</span></h2>
+        <p class="section-subtitle">Let's discuss architecture, timelines, and scaling your business.</p>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-info reveal-left">
+          <div class="ci-item"><span class="ci-icon">✉</span><div><span class="ci-label">Email Direct</span><span class="ci-value">hello@trinova.tech</span></div></div>
+          <div class="ci-item"><span class="ci-icon">◎</span><div><span class="ci-label">Meeting Hours</span><span class="ci-value">Mon–Fri, 09:00–18:00 IST</span></div></div>
+          <div class="ci-item"><span class="ci-icon">⬡</span><div><span class="ci-label">HQ</span><span class="ci-value">Bengaluru, India 🇮🇳</span></div></div>
+          <div class="ci-social">
+            <a href="#" class="ci-social-link" id="social-twitter"  aria-label="Twitter">𝕏</a>
+            <a href="#" class="ci-social-link" id="social-linkedin" aria-label="LinkedIn">in</a>
+            <a href="#" class="ci-social-link" id="social-github"   aria-label="GitHub">⌘</a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="cf-name">Name</label><input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required /></div>
+            <div class="form-group"><label for="cf-email">Email</label><input type="email" id="cf-email" name="email" placeholder="your@email.com" autocomplete="email" required /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-service">Project Type</label>
+              <select id="cf-service" name="service" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="custom">Custom Website</option>
+                <option value="saas">Web Application / SaaS</option>
+                <option value="ecommerce">E-Commerce</option>
+                <option value="mvp">Startup MVP</option>
+                <option value="seo">SEO & Performance</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="cf-date">Preferred Date</label><input type="date" id="cf-date" name="date" required /></div>
+          </div>
+          <div class="form-group"><label for="cf-message">Project Details</label><textarea id="cf-message" name="message" rows="4" placeholder="Tell us about the features, timeline, and tech stack preferences..." required></textarea></div>
+          <button type="submit" class="btn-launch" id="form-submit-btn">
+            <span class="launch-text">Schedule Meeting 📅</span>
+            <span class="launch-pulse" aria-hidden="true"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2024 TriNova Tech. All rights reserved.</p>
+        <p class="footer-tagline">Building the web of tomorrow. ⬡</p>
+      </div>
+    </footer>
+  </section>
+
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <div class="cursor-dot"  id="cursor-dot"  aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
